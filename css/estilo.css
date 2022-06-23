@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 3%;
+  padding: 20px;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-size: cover; }
+
+header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  header ul {
+    border: 5px; }
+  header h1 {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 50px;
+    margin-right: 35%;
+    color: #ceccca;
+    grid-area: facu; }
+  header .menu {
+    display: inline-block;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: right;
+    color: #ceccca;
+    padding: 3px;
+    grid-area: menu3; }
+    header .menu a {
+      color: #ceccca;
+      text-decoration: none;
+      padding: 0px 5px; }
+  header li {
+    border: 2px;
+    border-color: white;
+    border-radius: 100%;
+    padding: 10px; }
+  header .menu :hover {
+    color: white;
+    background-color: #0c0c70;
+    border-radius: 100%; }
+
+main {
+  margin: 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #ceccca; }
+  main .imagen {
+    transition: all 0.5s; }
+  main .imaginar {
+    opacity: 0.6;
+    transition: all 0.5s; }
+  main .imaginar:hover {
+    opacity: 1;
+    transform: rotate(360deg);
+    width: 250px;
+    height: 250px; }
+  main h3 {
+    margin: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px; }
+  main section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10vh;
+    transition: all 1s; }
+    main section .exp {
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      border: solid 5px #c4c4c4;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #7f5a83;
+      background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+      transition: all 1s; }
+  main section :hover {
+    height: 400px;
+    width: 400px;
+    font-size: 32px;
+    background-image: url(../imagenes/smg.png);
+    background-size: cover;
+    color: black; }
+  main .ro {
+    width: 80%;
+    align-content: center;
+    margin: 50px 10%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a b" "freud freud";
+    justify-items: center;
+    column-gap: 10%; }
+    main .ro .parrafoesp {
+      grid-area: a; }
+    main .ro .parrafoing {
+      grid-area: b; }
+    main .ro .freud {
+      grid-area: freud;
+      animation-name: desaparecer;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-duration: 4s;
+      animation-iteration-count: infinite; }
+
+@keyframes desaparecer {
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  main .informacion, main .informacion2 {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 10px 30px;
+    display: inline-block; }
+  main .informacion2 {
+    display: none; }
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  padding: 60px 0px;
+  text-align: left;
+  color: #ceccca; }
+  footer .link {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    color: black; }
+  footer a {
+    color: #ceccca;
+    text-decoration: none;
+    padding: 0px 5px; }
+
+@media screen and (max-width: 768px) {
+  main .ro {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "a" "b" "freud";
+    row-gap: 40px; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "facu" "menu3";
+    justify-items: center; } }
+
+@media screen and (max-width: 768px) {
+  main .informacion, main .informacion2 {
+    display: none; }
+  main .informacion2 {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px 30px; }
+  main h3 {
+    font-size: 24px;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  main section :hover {
+    width: 400px;
+    height: 300px;
+    font-size: 21px;
+    background-image: url(../imagenes/smg.png);
+    background-size: cover;
+    color: black; }
+  footer {
+    display: inline-block; }
+  img {
+    display: block; }
+  .imagenesflex {
+    margin-left: 25%; } }

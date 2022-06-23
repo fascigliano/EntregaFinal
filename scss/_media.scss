@@ -1,0 +1,44 @@
+
+
+@media screen and (max-width:768px) {
+    main {
+    .ro {grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+            grid-template-areas: "a"
+            "b" "freud"; row-gap: 40px;}}}
+        
+            @media screen and (max-width:768px) { 
+    header {  margin-bottom: 20px;
+                    display: grid;
+                   grid-template-columns: 1fr;
+                   grid-template-rows: 1fr 1fr;
+                   grid-template-areas: "facu" "menu3";
+                   justify-items: center;
+                }}
+              
+ @media screen and (max-width:768px) {    
+   main {   
+            .informacion {display: none;}
+        .informacion2 {  list-style: none;
+            margin-bottom: 20px;
+            text-align: left;
+            display: inline-block;
+            margin: 10px 30px;}
+
+              h3 {font-size: 24px; text-align: center;}
+              
+              }}
+
+              @media screen and (max-width:768px) {
+                main{
+              section :hover {width: 400px;
+                height: 300px;
+                font-size: 21px;
+                background-image: url(../imagenes/smg.png);
+                background-size: cover;
+                color: black;}}
+              
+              footer {display: inline-block}
+              img {display: block;}
+            .imagenesflex {margin-left: 25%;}}
